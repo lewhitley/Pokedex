@@ -11,7 +11,6 @@ const Root = ({ store }) => {
   };
 
   const requestPokemonOnEnter = (nextState) => {
-    console.log(nextState);
     store.dispatch(requestPokemon(nextState.params.id));
   };
 

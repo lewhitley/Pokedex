@@ -13,12 +13,12 @@ const PokemonDetail = props => {
         <li>Type: {props.pokemonDetail.poke_type}</li>
         <li>Attack: {props.pokemonDetail.attack}</li>
         <li>Defense: {props.pokemonDetail.defense}</li>
-        <li>Moves: {props.pokemonDetail.moves}</li>
+        <li>Moves: {props.pokemonDetail.moves.join(", ")}</li>
         <li>
           Toys:
           <ul>
-            {props.pokemonDetail.items.map( item => (
-              <li>
+            {props.pokemonDetail.items.map( (item, idx) => (
+              <li key={idx}>
                 <img src={item.image_url}/>
               </li>) )}
             </ul>
