@@ -2,9 +2,10 @@ import React from 'react';
 
 const ItemDetail = ({ itemInfo }) => (
   <ul>
-    <li>Reached</li>
-    { itemInfo.map( (item, idx) => (
-      <li key={idx}>hi</li>
-    ))}
+      <li>{itemInfo.name}</li>
+      <li>Happiness: {itemInfo.happiness}</li>
+      <li>Price: ${itemInfo.price}</li>
   </ul>
 );
+
+export default ItemDetail;

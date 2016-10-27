@@ -6,8 +6,8 @@ const PokemonDetail = props => {
 
   if (props.pokemonDetail.name) {
     return (
-      <div>
-        <ul className="pokemon-detail">
+      <div className="pokemon-detail">
+        <ul>
           <li>
             <img src={props.pokemonDetail.image_url}/>
           </li>
@@ -17,7 +17,7 @@ const PokemonDetail = props => {
           <li>Defense: {props.pokemonDetail.defense}</li>
           <li>Moves: {props.pokemonDetail.moves.join(", ")}</li>
           <li>
-            Toys:
+            Items:
             <ul>
               {props.pokemonDetail.items.map( (item, idx) => (
                 <li key={idx}>

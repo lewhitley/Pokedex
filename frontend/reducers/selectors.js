@@ -11,5 +11,5 @@ export const selectPokemonItem = (state, itemId) => {
       selectedItem = item;
     }
   });
-  return [selectedItem.name, selectedItem.happiness, selectedItem.price];
+  return selectedItem;
 };
