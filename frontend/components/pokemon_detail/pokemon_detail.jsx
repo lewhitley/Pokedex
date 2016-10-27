@@ -5,7 +5,7 @@ const PokemonDetail = props => {
 
   if (props.pokemonDetail.name) {
     return (
-      <ul>
+      <ul className="pokemon-detail">
         <li>
           <img src={props.pokemonDetail.image_url}/>
         </li>
