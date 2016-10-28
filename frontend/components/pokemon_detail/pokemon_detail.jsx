@@ -32,7 +32,7 @@ const PokemonDetail = props => {
       </div>
       );
   } else {
-    return (<h2>a</h2>);
+    return (<h2></h2>);
   }
 };
 
