@@ -16,9 +16,9 @@ const PokemonDetail = props => {
           <li>Attack: {props.pokemonDetail.attack}</li>
           <li>Defense: {props.pokemonDetail.defense}</li>
           <li>Moves: {props.pokemonDetail.moves.join(", ")}</li>
-          <li>
+          <li className='toys'>
             Items:
-            <ul>
+            <ul className='toy-list'>
               {props.pokemonDetail.items.map( (item, idx) => (
                 <li key={idx}>
                   <img src={item.image_url}

@@ -30,7 +30,7 @@ class PokemonForm extends React.Component {
     return (
       <div className='pokemon-detail'>
         <ul>
-          {this.props.errors.map((error, idx) => <li key={idx}>{error}</li>)};
+          {this.props.errors.map((error, idx) => <li key={idx}>{error}</li>)}
         </ul>
 
         <img src="/assets/pokemon-logo.png" alt="Copyright of Nintendo Pokemon" />
